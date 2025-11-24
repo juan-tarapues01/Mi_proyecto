@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 DB_CONFIG = {
     'host': 'localhost',
-    'database': 'postgres',
+    'database': 'Base_datos',
     'user': 'postgres',
     'password': '123456',
     'port': 5432
@@ -29,11 +29,11 @@ def crear_tabla():
         cursor = conexion.cursor()  # Crea un cursor para ejecutar SQL
         cursor.execute("""
         CREATE TABLE IF NOT EXISTS contactos (
-            id SERIAL PRIMARY KEY,              -- Identificador único automático
-            nombre VARCHAR(100) NOT NULL,       -- Campo para el nombre
-            correo VARCHAR(100) NOT NULL,       -- Campo para el correo
-            mensaje TEXT,                       -- Campo opcional para el mensaje
-            creado TIMESTAMP DEFAULT NOW()      -- Fecha y hora de creación
+            id SERIAL PRIMARY KEY,              
+            nombre VARCHAR(100) NOT NULL,       
+            correo VARCHAR(100) NOT NULL,       
+            mensaje TEXT,                       
+            creado TIMESTAMP DEFAULT NOW()     
         );
         """)
         conexion.commit()  # Guarda los cambios en la base de datos
