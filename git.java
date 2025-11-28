@@ -1,0 +1,1 @@
+ssh -o StrictHostKeyChecking=accept-new git@github.com
