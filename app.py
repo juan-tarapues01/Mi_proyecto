@@ -127,3 +127,6 @@ if __name__ == '__main__':
     crear_tabla()  # Crea la tabla si no existe
     # Inicia el servidor en modo debug, accesible desde cualquier IP
     app.run(debug=True, host='0.0.0.0', port=5000)
+
+
+#Subiendo repositorio a GitHub Sena
