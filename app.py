@@ -5,6 +5,8 @@ from datetime import datetime
 # Configuración de la aplicación
 app = Flask(__name__)
 
+# Configuración de la base de datos PostgreSQL
+
 DB_CONFIG = {
     'host': 'localhost',
     'database': 'Base_datos',
