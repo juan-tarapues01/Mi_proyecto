@@ -36,7 +36,7 @@ def crear_tabla():
             creado TIMESTAMP DEFAULT NOW()     
         );
         """)
-        conexion.commit()  # Guarda los cambios en la base de datos
+        conexion.commit()                    # Guarda los cambios en la base de datos
         cursor.close()     # Cierra el cursor
         conexion.close()   # Cierra la conexión
 
